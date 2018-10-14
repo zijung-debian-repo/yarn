@@ -1,0 +1,32 @@
+Source: yarn
+Section: javascript
+Priority: optional
+Maintainer: Zijung Chueh <i@zijung.me>
+Build-Depends:
+ debhelper (>= 11),
+Standards-Version: 4.1.3
+Homepage: https://yarnpkg.com/
+Vcs-Browser: https://github.com/zijung-debian-repo/yarn
+Vcs-Git: https://github.com/zijung-debian-repo/yarn.git
+
+Package: yarn
+Architecture: any
+Conflicts:
+ cmdtest,
+Depends:
+ nodejs,
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Fast, reliable, and secure dependency management.
+ Yarn: Fast, reliable, and secure dependency management.
+ .
+ Fast: Yarn caches every package it downloads so it never needs to again. It
+ also parallelizes operations to maximize resource utilization so install times
+ are faster than ever.
+ .
+ Reliable: Using a detailed, but concise, lockfile format, and a deterministic
+ algorithm for installs, Yarn is able to guarantee that an install that worked
+ on one system will work exactly the same way on any other system.
+ .
+ Secure: Yarn uses checksums to verify the integrity of every installed package
+ before its code is executed.

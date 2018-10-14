@@ -1,0 +1,5 @@
+version=4
+
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%yarn-$1.tar.gz%" \
+  https://github.com/yarnpkg/yarn/releases \
+  (?:.*?/)?yarn-v?(\d[\d.]*)\.tar\.gz

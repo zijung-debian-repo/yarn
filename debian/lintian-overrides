@@ -1,0 +1,3 @@
+yarn: new-package-should-close-itp-bug
+yarn: binary-without-manpage usr/bin/yarn
+yarn: binary-without-manpage usr/bin/yarnpkg

@@ -1,0 +1,3 @@
+bin/* usr/share/yarn/bin
+lib/* usr/share/yarn/lib
+package.json usr/share/yarn
